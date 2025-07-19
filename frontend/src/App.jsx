@@ -22,10 +22,10 @@ const App = () => {
   }, [])
 
   return (
-    <div>
+    <div >
       {load ?
         <PreLoader /> :
-        <div>
+        <div className='bg-[#08386F]/10 px-32 py-4'>
           <NavBar />
           <Routes>
             <Route path='/' element={<Home/>} />
