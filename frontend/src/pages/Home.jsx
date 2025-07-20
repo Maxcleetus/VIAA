@@ -1,8 +1,10 @@
 import React from 'react'
 import hero from '../assets/hero1.png'
+import { useNavigate } from 'react-router-dom'
 import { Book, Candy, Castle, Coffee, CookingPot, Drum, Hexagon, LanguagesIcon, Mountain, Sailboat, Scale, TowerControl, Train, Volleyball, Waves } from 'lucide-react'
 
 const Home = () => {
+    const Navigate = useNavigate()
     return (
         <div>
             <div className="bg-black/10 rounded-4xl p-6">
@@ -20,59 +22,59 @@ const Home = () => {
             </div>
             <div className='flex flex-col items-center'>
                 <div className='flex justify-start items-start py-6 gap-4  max-w-[800px] no-scrollbar overflow-x-scroll'>
-                    <div className='flex justify-center w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
+                    <div onClick={()=>Navigate('/district/0')} className='flex justify-center w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
                         <Scale size={32} />
                         <p>TVM</p>
                     </div>
-                    <div className='flex justify-center w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
+                    <div onClick={()=>Navigate('/district/1')} className='flex justify-center w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
                         <TowerControl size={32} />
                         <p>KLM</p>
                     </div>
-                    <div className='flex justify-center w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
+                    <div onClick={()=>Navigate('/district/2')} className='flex justify-center w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
                         <Hexagon size={32} />
                         <p>PTA</p>
                     </div>
-                    <div className='flex justify-center w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
+                    <div onClick={()=>Navigate('/district/3')} className='flex justify-center w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
                         <Sailboat size={32} />
                         <p>ALP</p>
                     </div>
-                    <div className='flex justify-center w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
+                    <div onClick={()=>Navigate('/district/4')} className='flex justify-center w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
                         <Book size={32} />
                         <p>KTM</p>
                     </div>
-                    <div className='flex justify-center w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
+                    <div onClick={()=>Navigate('/district/5')} className='flex justify-center w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
                         <Coffee size={32} />
                         <p>IDK</p>
                     </div>
-                    <div className='flex justify-center w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
+                    <div onClick={()=>Navigate('/district/6')} className='flex justify-center w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
                         <Train size={32} />
                         <p>EKM</p>
                     </div>
-                    <div className='flex justify-center w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
+                    <div onClick={()=>Navigate('/district/7')} className='flex justify-center w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
                         <Drum size={32} />
                         <p>TSR</p>
                     </div>
-                    <div className='flex justify-center  w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
+                    <div onClick={()=>Navigate('/district/8')} className='flex justify-center  w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
                         <Castle size={32} />
                         <p>PLKD</p>
                     </div>
-                    <div className='flex justify-center  w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
+                    <div onClick={()=>Navigate('/district/9')} className='flex justify-center  w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
                         <Volleyball size={32} />
                         <p>MLP</p>
                     </div>
-                    <div className='flex justify-center  w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
+                    <div onClick={()=>Navigate('/district/10')} className='flex justify-center  w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
                         <Candy size={32} />
                         <p>KKD</p>
                     </div>
-                    <div className='flex justify-center  w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
+                    <div onClick={()=>Navigate('/district/11')} className='flex justify-center  w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
                         <Mountain size={32} />
                         <p>WYD</p>
                     </div>
-                    <div className='flex justify-center  w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
+                    <div onClick={()=>Navigate('/district/12')} className='flex justify-center  w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
                         <CookingPot size={32} />
                         <p>KNR</p>
                     </div>
-                    <div className='flex justify-center  w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
+                    <div onClick={()=>Navigate('/district/13')} className='flex justify-center  w-[80px] flex-col items-center rounded-full bg-[#123F75]/10 p-4 px-6'>
                         <Waves size={32} />
                         <p>KSR</p>
                     </div>

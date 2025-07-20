@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
-
+import Chatboat from './pages/Chatboat';
 import Home from './pages/Home';
 import District from './pages/District';
 import Login from './pages/Login';
@@ -9,7 +9,7 @@ import Contact from './pages/Contact';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import PreLoader from './pages/PreLoader';
-
+import MicSearch from './pages/MicSearch';
 const App = () => {
   const [load, setLoad] = useState(true);
 
@@ -26,9 +26,11 @@ const App = () => {
         <PreLoader /> :
         <div className='bg-[#08386F]/10 px-32 py-4'>
           <NavBar />
+          <Chatboat/>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/district" element={<District />} />
+            <Route path="/district/" element={<District />} />
+            <Route path="/district/:id" element={<District />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/login" element={<Login />} />
